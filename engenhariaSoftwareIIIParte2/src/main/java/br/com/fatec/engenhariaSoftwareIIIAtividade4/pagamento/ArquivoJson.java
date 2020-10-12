@@ -58,6 +58,6 @@ public class ArquivoJson{
 			System.out.println(pagamento.getParcelas());
 		}
 
-	}
+	}//oi
 	
 }
