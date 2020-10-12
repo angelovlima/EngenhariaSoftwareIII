@@ -52,13 +52,12 @@ public class ArquivoJson{
 		Reader reader = new FileReader("C:\\Users\\mihoj\\OneDrive\\Documentos\\Faculdade\\ES3\\arquivos IV\\remessa.json");
 		Type listType = new TypeToken<List<Pagamento>>() {}.getType();
 		ArrayList<Pagamento> pagamentos = gson.fromJson(reader, listType);
-		int i = 1;
+
 		for (Pagamento pagamento : pagamentos) {
 			System.out.println(pagamento.getNome());
-			System.out.println(i +" - "+ pagamento.getParcelas());
-			i++;
+			System.out.println(pagamento.getParcelas());
 		}
 
-	}//we
+	}
 	
 }
