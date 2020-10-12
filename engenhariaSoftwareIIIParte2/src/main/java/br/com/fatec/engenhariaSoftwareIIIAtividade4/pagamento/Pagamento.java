@@ -5,7 +5,7 @@ public class Pagamento {
     private String nomeTitular;
     private Double parcelas;
     private String nome;
-    private String cpf;
+    private String CPF;
     private String bancoRecebimento;
     private String bancoPagamento;
     private String data;
@@ -35,10 +35,10 @@ public class Pagamento {
 		this.nome = nome;
 	}
 	public String getCpf() {
-		return cpf;
+		return CPF;
 	}
 	public void setCpf(String cpf) {
-		this.cpf = cpf;
+		this.CPF = cpf;
 	}
 	public String getBancoRecebimento() {
 		return bancoRecebimento;
