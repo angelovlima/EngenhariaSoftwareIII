@@ -12,6 +12,7 @@ public class Inicio {
 		ArquivoJson json = new ArquivoJson();
 		
 		json.readFile();
+		//we
 	}
 
 }

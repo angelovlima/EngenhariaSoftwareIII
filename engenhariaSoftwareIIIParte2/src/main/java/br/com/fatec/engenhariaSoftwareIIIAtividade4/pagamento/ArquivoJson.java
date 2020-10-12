@@ -59,6 +59,6 @@ public class ArquivoJson{
 			i++;
 		}
 
-	}
+	}//we
 	
 }
