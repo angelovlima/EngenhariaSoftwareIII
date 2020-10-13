@@ -15,10 +15,9 @@ public class ArquivoXML{
     public ArrayList<Pagamento> readFile(String caminho) throws IOException{
         XStream leitor = new XStream(new StaxDriver());
         Reader xml = new FileReader(caminho);
-        leitor.alias("br.com.pageseguro.RemessaCartaoCredito", CartaoCredito.class);
-        leitor.alias("br.com.pageseguro.RemessaCartaoDebito", CartaoDebito.class);
-        leitor.alias("br.com.pageseguro.RemessaBoleto", Boleto.class);
-        leitor.alias("pagamento", Pagamento[].class);
+        leitor.alias("br.com.pageseguro.RemessaCartaoCredito", Pagamento.class);
+        leitor.alias("br.com.pageseguro.RemessaCartaoDebito", Pagamento.class);
+        leitor.alias("br.com.pageseguro.RemessaBoleto", Pagamento.class);
         @SuppressWarnings("unchecked")
 		ArrayList<Pagamento> pagamentos = (ArrayList<Pagamento>) leitor.fromXML(xml);
 
