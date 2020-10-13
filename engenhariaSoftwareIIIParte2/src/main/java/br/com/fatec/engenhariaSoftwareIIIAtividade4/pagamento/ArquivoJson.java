@@ -10,7 +10,7 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class ArquivoJson{
+public class ArquivoJson {
 
 	public ArrayList<Pagamento> readFile(String caminho) throws IOException{
 		Gson gson = new Gson(); 

@@ -18,11 +18,13 @@ public class Inicio {
 //		Leitor leitor = new Leitor();
 //		
 //		leitor.imprimir(pagamentos);
-//		
 		
-		ArquivoXML xml = new ArquivoXML("C:\\Users\\tabat\\Documents\\FATEC ADS\\4º Sem\\Eng Soft III\\arquivos IV\\remessa.xml");
 		
-		xml.ler();
+		ArquivoXML xml = new ArquivoXML();
+		
+		ArrayList<Pagamento> pagamentosXML = xml.readFile("C:\\Users\\mihoj\\OneDrive\\Documentos\\Faculdade\\ES3\\arquivos IV\\remessa.xml");
+		
+		//xml.readFile(pagamentosXML);
 	}
 
 }
