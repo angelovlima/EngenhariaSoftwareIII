@@ -1,9 +1,11 @@
 package br.com.fatec.engenhariaSoftwareIIIAtividade4;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.ArquivoJson;
 import br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.Leitor;
+import br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.Pagamento;
 
 public class Inicio {
 
@@ -11,8 +13,17 @@ public class Inicio {
 		
 		ArquivoJson json = new ArquivoJson();
 		
-		json.readFile();
-		//we
+		ArrayList<Pagamento> pagamentos = json.readFile("C:\\Users\\mihoj\\OneDrive\\Documentos\\Faculdade\\ES3\\arquivos IV\\remessa.json");
+		
+		Leitor leitor = new Leitor();
+		
+		leitor.imprimir(pagamentos);
+		
+		
+		
+		//ArquivoXML xml = new ArquivoXML();
+		
+		//xml.ler();
 	}
 
 }

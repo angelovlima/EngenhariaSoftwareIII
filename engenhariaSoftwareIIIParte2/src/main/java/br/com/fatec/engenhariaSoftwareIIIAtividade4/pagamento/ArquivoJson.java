@@ -12,23 +12,14 @@ import com.google.gson.reflect.TypeToken;
 
 public class ArquivoJson{
 
-	public void readFile() throws IOException{
+	public ArrayList<Pagamento> readFile(String caminho) throws IOException{
 		Gson gson = new Gson(); 
-		ValidadorCpf validadorCpf = new ValidadorCpf();
 		
-		Reader reader = new FileReader("C:\\remessa.json");
+		Reader reader = new FileReader(caminho);
 		Type listType = new TypeToken<List<Pagamento>>() {}.getType();
 		ArrayList<Pagamento> pagamentos = gson.fromJson(reader, listType);
 
-		for (Pagamento pagamento : pagamentos) {
-			//validação provisória de cpf
-			if(ValidadorCpf.valida(pagamento.getCpf())) {
-				System.out.println(pagamento);
-				System.out.println(pagamento.getNome() != null ? pagamento.getNome() : null);
-				System.out.println(pagamento.getParcelas() != null ? pagamento.getParcelas() : null);
-				System.out.println(pagamento.getCpf() != null ? pagamento.getCpf() : null);
-			}
-		}
+		return pagamentos;
 
 	}
 	

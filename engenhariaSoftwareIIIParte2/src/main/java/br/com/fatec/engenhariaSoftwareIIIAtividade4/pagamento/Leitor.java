@@ -1,20 +1,19 @@
 package br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento;
 
-public abstract class Leitor {
+import java.util.ArrayList;
 
-	protected String cabecalho() {
-		String cabecalho = " ### Arquivo de Remessa ### ";
-		return cabecalho;
+public class Leitor {
+
+	public void imprimir(ArrayList<Pagamento> pagamentos) {
+		//ValidadorCpf validadorCpf = new ValidadorCpf();
+		
+		for (Pagamento pagamento : pagamentos) {
+			if(ValidadorCpf.valida(pagamento.getCpf())) {
+				System.out.println(pagamento.getNome() != null ? pagamento.getNome() : null);
+				System.out.println(pagamento.getParcelas() != null ? pagamento.getParcelas() : null);
+				System.out.println(pagamento.getCpf() != null ? pagamento.getCpf() : null);
+			}
+		}
 	}
 	
-	protected String rodape() {
-		String rodape = " ### Fim Arquivo ### ";
-		return rodape;
-	}
-	
-	protected abstract String construirArquivo();
-	
-	public String escreverArquivo() {
-		return cabecalho() + construirArquivo() + rodape();
-	}
 }
