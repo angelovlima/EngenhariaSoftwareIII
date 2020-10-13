@@ -1,33 +1,30 @@
 package br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento;
 
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.Reader;
 import java.util.ArrayList;
-
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 
 
-public class ArquivoXML{
+public class ArquivoXML extends Leitor{
 
 
-    public ArrayList<Pagamento> readFile(String caminho) throws IOException{
+    public ArquivoXML(String caminho) throws IOException {
+		super(caminho);
+	}
+
+
+	@Override
+	public ArrayList<Pagamento> readFile() {
         XStream leitor = new XStream(new StaxDriver());
-        Reader xml = new FileReader(caminho);
         leitor.alias("br.com.pageseguro.RemessaCartaoCredito", Pagamento.class);
         leitor.alias("br.com.pageseguro.RemessaCartaoDebito", Pagamento.class);
         leitor.alias("br.com.pageseguro.RemessaBoleto", Pagamento.class);
         @SuppressWarnings("unchecked")
-		ArrayList<Pagamento> pagamentos = (ArrayList<Pagamento>) leitor.fromXML(xml);
+		ArrayList<Pagamento> pagamentos = (ArrayList<Pagamento>) leitor.fromXML(reader);
 
-        for(Pagamento pagamento : pagamentos) {
-            System.out.println(pagamento.getNome());
-
-        }
-        
         return pagamentos;
-    }
+	}
 
 
 }
