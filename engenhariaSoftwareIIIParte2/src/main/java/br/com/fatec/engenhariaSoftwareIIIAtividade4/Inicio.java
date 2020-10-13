@@ -15,16 +15,19 @@ public class Inicio {
 //		
 //		ArrayList<Pagamento> pagamentos = json.readFile("C:\\Users\\mihoj\\OneDrive\\Documentos\\Faculdade\\ES3\\arquivos IV\\remessa.json");
 //
-//		Leitor leitor = new Leitor();
+//		Leitor leitorJson = new Leitor();
 //		
-//		leitor.imprimir(pagamentos);
+//		leitorJson.imprimir(pagamentos);
 		
 		
 		ArquivoXML xml = new ArquivoXML();
 		
 		ArrayList<Pagamento> pagamentosXML = xml.readFile("C:\\Users\\mihoj\\OneDrive\\Documentos\\Faculdade\\ES3\\arquivos IV\\remessa.xml");
 		
-		//xml.readFile(pagamentosXML);
+		Leitor leitorXml = new Leitor();
+		
+		leitorXml.imprimir(pagamentosXML);
+	
 	}
 
 }

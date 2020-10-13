@@ -19,15 +19,15 @@ public class ArquivoXML{
         leitor.alias("br.com.pageseguro.RemessaCartaoDebito", CartaoDebito.class);
         leitor.alias("br.com.pageseguro.RemessaBoleto", Boleto.class);
         leitor.alias("pagamento", Pagamento[].class);
-        Pagamento[] pagamentos = (Pagamento[]) leitor.fromXML(xml);
+        @SuppressWarnings("unchecked")
+		ArrayList<Pagamento> pagamentos = (ArrayList<Pagamento>) leitor.fromXML(xml);
 
-        for(int i = 0; i < pagamentos.length; i++) {
-            System.out.println(pagamentos[i].getNome());
+        for(Pagamento pagamento : pagamentos) {
+            System.out.println(pagamento.getNome());
 
         }
-        ArrayList<Pagamento> pagamentoss = new ArrayList<Pagamento>();
         
-        return pagamentoss;
+        return pagamentos;
     }
 
 
