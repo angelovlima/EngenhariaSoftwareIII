@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.ArquivoJson" 
+    project="engenhariaSoftwareIIIParte2" 
+    file="/engenhariaSoftwareIIIParte2/src/main/java/br/com/fatec/engenhariaSoftwareIIIAtividade4/pagamento/ArquivoJson.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="186" y="101"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.ArquivoXML" 
+    project="engenhariaSoftwareIIIParte2" 
+    file="/engenhariaSoftwareIIIParte2/src/main/java/br/com/fatec/engenhariaSoftwareIIIAtividade4/pagamento/ArquivoXML.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="516" y="99"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.Leitor" 
+    project="engenhariaSoftwareIIIParte2" 
+    file="/engenhariaSoftwareIIIParte2/src/main/java/br/com/fatec/engenhariaSoftwareIIIAtividade4/pagamento/Leitor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="342" y="244"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.Imprimir" 
+    project="engenhariaSoftwareIIIParte2" 
+    file="/engenhariaSoftwareIIIParte2/src/main/java/br/com/fatec/engenhariaSoftwareIIIAtividade4/pagamento/Imprimir.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="342" y="499"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.Pagamento" 
+    project="engenhariaSoftwareIIIParte2" 
+    file="/engenhariaSoftwareIIIParte2/src/main/java/br/com/fatec/engenhariaSoftwareIIIAtividade4/pagamento/Pagamento.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="828" y="359"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento.ValidadorCpf" 
+    project="engenhariaSoftwareIIIParte2" 
+    file="/engenhariaSoftwareIIIParte2/src/main/java/br/com/fatec/engenhariaSoftwareIIIAtividade4/pagamento/ValidadorCpf.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="342" y="376"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

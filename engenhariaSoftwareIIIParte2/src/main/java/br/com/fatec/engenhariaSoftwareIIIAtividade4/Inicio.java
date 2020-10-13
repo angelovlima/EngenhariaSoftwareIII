@@ -11,22 +11,22 @@ public class Inicio {
 
 	public static void main(String[] args) throws IOException {
 		
-//		ArquivoJson json = new ArquivoJson("C:\\Users\\mihoj\\OneDrive\\Documentos\\Faculdade\\ES3\\arquivos IV\\remessa.json");
+		ArquivoJson json = new ArquivoJson("C:\\remessa.json");
+		
+		ArrayList<Pagamento> pagamentos = json.readFile();
+
+		Imprimir imprimirJson = new Imprimir();
+		
+		imprimirJson.imprimir(pagamentos);
+		
+		
+//		ArquivoXML xml = new ArquivoXML("C:\\remessa.xml");
 //		
-//		ArrayList<Pagamento> pagamentos = json.readFile();
-//
-//		Imprimir imprimirJson = new Imprimir();
+//		ArrayList<Pagamento> pagamentosXML = xml.readFile();
 //		
-//		imprimirJson.imprimir(pagamentos);
-		
-		
-		ArquivoXML xml = new ArquivoXML("C:\\Users\\mihoj\\OneDrive\\Documentos\\Faculdade\\ES3\\arquivos IV\\remessa.xml");
-		
-		ArrayList<Pagamento> pagamentosXML = xml.readFile();
-		
-		Imprimir imprimirXml = new Imprimir();
-		
-		imprimirXml.imprimir(pagamentosXML);
+//		Imprimir imprimirXml = new Imprimir();
+//		
+//		imprimirXml.imprimir(pagamentosXML);
 	
 	}
 
