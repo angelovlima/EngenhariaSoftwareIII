@@ -3,6 +3,11 @@ package br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento;
 import java.util.ArrayList;
 
 public class Leitor {
+	public String caminhoArquivo;
+	
+	public Leitor(String caminhoArquivo) {
+		this.caminhoArquivo = caminhoArquivo;
+	}
 
 	public void imprimir(ArrayList<Pagamento> pagamentos) {
 		//ValidadorCpf validadorCpf = new ValidadorCpf();

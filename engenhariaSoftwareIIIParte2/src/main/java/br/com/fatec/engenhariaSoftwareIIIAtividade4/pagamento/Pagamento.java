@@ -1,15 +1,31 @@
 package br.com.fatec.engenhariaSoftwareIIIAtividade4.pagamento;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+
+@XStreamAlias("list")
 public class Pagamento {
-	private String numeroCartao;
-    private String nomeTitular;
-    private Double parcelas;
-    private String nome;
+	private String nome;
     private String CPF;
-    private String bancoRecebimento;
     private String bancoPagamento;
     private String data;
-    private Double valor;
+    private String valor;
+    private String numeroCartao;
+    private String nomeTitular;
+    private String parcelas;
+    private String numeroBoleto;
+	private String bancoRecebimento;
+	
+	public Pagamento() {
+		
+	}
+	
+    public String getNumeroBoleto() {
+		return numeroBoleto;
+	}
+	public void setNumeroBoleto(String numeroBoleto) {
+		this.numeroBoleto = numeroBoleto;
+	}
 	public String getNumeroCartao() {
 		return numeroCartao;
 	}
@@ -22,10 +38,10 @@ public class Pagamento {
 	public void setNomeTitular(String nomeTitular) {
 		this.nomeTitular = nomeTitular;
 	}
-	public Double getParcelas() {
+	public String getParcelas() {
 		return parcelas;
 	}
-	public void setParcelas(Double parcelas) {
+	public void setParcelas(String parcelas) {
 		this.parcelas = parcelas;
 	}
 	public String getNome() {
@@ -37,8 +53,8 @@ public class Pagamento {
 	public String getCpf() {
 		return CPF;
 	}
-	public void setCpf(String cpf) {
-		this.CPF = cpf;
+	public void setCpf(String CPF) {
+		this.CPF = CPF;
 	}
 	public String getBancoRecebimento() {
 		return bancoRecebimento;
@@ -58,12 +74,12 @@ public class Pagamento {
 	public void setData(String data) {
 		this.data = data;
 	}
-	public Double getValor() {
+	public String getValor() {
 		return valor;
 	}
-	public void setValor(Double valor) {
+	public void setValor(String valor) {
 		this.valor = valor;
 	}
-    
-    
+
+	
 }
